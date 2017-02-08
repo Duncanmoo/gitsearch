@@ -1,0 +1,5 @@
+name: Github Search
+type: module
+description: module for searching github repositories.
+core: 8.x
+package: Custom

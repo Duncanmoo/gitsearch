@@ -1,0 +1,5 @@
+services:
+  gitsearch.default:
+    class: Drupal\gitsearch\GithubSearchService
+    arguments: []
+

@@ -1,0 +1,17 @@
+
+gitsearch.git_search_search:
+  path: '/gitsearch'
+  defaults:
+    _controller: '\Drupal\gitsearch\Controller\GitSearch::searchHome'
+    _title: 'Search Github'
+  requirements:
+    _permission: 'access content'
+
+gitsearch.gitsearch_form:
+  path: '/gitsearch/form/search'
+  defaults:
+    _form: '\Drupal\gitsearch\Form\SearchForm'
+    _title: 'SearchForm'
+  requirements:
+    _access: 'TRUE'
+  

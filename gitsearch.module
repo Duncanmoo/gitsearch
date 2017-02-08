@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains gitsearch.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gitsearch_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gitsearch module.
+    case 'help.page.gitsearch':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for searching github repositories.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function gitsearch_theme() {
+  return [
+    'gitsearch' => [
+      'template' => 'gitsearch',
+      'variables' => [
+        'content' => null,
+        'form' => null,
+        'results' => null,
+      ],
+    ],
+  ];
+}

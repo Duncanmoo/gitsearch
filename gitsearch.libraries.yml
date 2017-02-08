@@ -1,0 +1,5 @@
+gitsearch:
+  version: 1.x
+  css:
+    theme:
+      css/gitsearch.css: {}
